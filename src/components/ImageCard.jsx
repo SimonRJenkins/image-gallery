@@ -8,12 +8,12 @@ const ImageCard = ({ image }) => {
       <img
         src={image.webformatURL}
         alt=""
-        className="hover:border-solid hover:border-2 hover:border-purple-400 w-full"
+        className="hover:border-solid hover:border-2 hover:border-slate-400 w-full"
         onClick={() => (window.location.href = image.pageURL)}
       />
 
       <div className="px-6 py-4">
-        <div className="font-bold text-purple-500 text-xl mb-2">
+        <div className="font-bold text-slate-500 text-xl mb-2">
           Photo by {image.user}
         </div>
         <ul>
