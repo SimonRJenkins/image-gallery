@@ -8,7 +8,7 @@ const ImageCard = ({ image }) => {
       <img
         src={image.webformatURL}
         alt=""
-        className="hover:border-solid hover:border-2 hover:border-cyan-400 hover:scale-105 hover:cursor-pointer"
+        className="hover:border-solid hover:border-2 hover:border-cyan-400 w-full hover:scale-105 hover:cursor-pointer"
         onClick={() => (window.location.href = image.pageURL)}
       />
 
