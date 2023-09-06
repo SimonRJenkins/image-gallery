@@ -8,12 +8,12 @@ const ImageCard = ({ image }) => {
       <img
         src={image.webformatURL}
         alt=""
-        className="hover:border-solid hover:border-2 hover:border-slate-400 w-full"
+        className="hover:border-solid hover:border-2 hover:border-cyan-400 hover:scale-105 hover:cursor-pointer"
         onClick={() => (window.location.href = image.pageURL)}
       />
 
       <div className="px-6 py-4">
-        <div className="font-bold text-slate-500 text-xl mb-2">
+        <div className="font-bold text-cyan-500 text-xl mb-2">
           Photo by {image.user}
         </div>
         <ul>
@@ -39,7 +39,7 @@ const ImageCard = ({ image }) => {
         {tags.map((tag, index) => (
           <span
             key={index}
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mt-1"
           >
             #{tag}
           </span>
